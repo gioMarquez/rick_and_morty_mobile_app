@@ -20,7 +20,7 @@ Las dependencias principales del proyecto son http para consumir la API y cupert
 
 Con estos pasos el proyecto debería levantarse correctamente desde cualquier entorno con Flutter configurado.
 
-###Proceso de desarrollo
+### Proceso de desarrollo
 Consistió en estructurar la aplicación siguiendo una separación clara entre presentación, lógica y consumo de datos. Definí un modelo Character para mapear la información obtenida de la API de Rick and Morty, y creé un servicio dedicado para gestionar las peticiones HTTP, incluyendo paginación, búsqueda por nombre y filtrado por estado.
 
 En la interfaz, utilicé widgets reutilizables como CharacterCard y organicé la pantalla principal con scroll infinito controlado mediante un ScrollController. Para optimizar el rendimiento y evitar llamadas excesivas al servidor, implementé un sistema de debounce en la barra de búsqueda. También diseñé una pantalla de detalle que muestra la información completa del personaje junto con los episodios en una disposición responsiva mediante Wrap.
