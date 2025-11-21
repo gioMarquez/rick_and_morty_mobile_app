@@ -1,16 +1,23 @@
-# flutter_application_2
+# Rick and Morty Mobile App
 
 A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Para levantar este proyecto Flutter debes tener instalado Flutter SDK, Dart y un editor como VS Code o Android Studio.
+Primero clona el repositorio y entra en la carpeta del proyecto.
+Después ejecuta el comando flutter pub get para descargar todas las dependencias.
+Asegúrate de tener un emulador corriendo o un dispositivo físico conectado.
+Ejecuta flutter devices para verificar que Flutter lo reconoce.
+Finalmente inicia la aplicación con flutter run.
 
-A few resources to get you started if this is your first Flutter project:
+Si tienes problemas de conexión a la API, revisa que en el archivo AndroidManifest.xml dentro de android/app/src/main/ tengas agregada la línea <uses-permission android:name="android.permission.INTERNET"/>.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Para ejecutar pruebas, usa el comando flutter test.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Estructura sugerida del proyecto:
+lib/ con las carpetas models, pages, widgets y el archivo main.dart.
+
+Las dependencias principales del proyecto son http para consumir la API y cupertino_icons para íconos.
+
+Con estos pasos el proyecto debería levantarse correctamente desde cualquier entorno con Flutter configurado.
